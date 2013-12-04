@@ -1,8 +1,8 @@
 class ModernizrGrailsPlugin {
     // the plugin version
-    def version = "2.6.2"
+    def version = "2.7.1"
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "1.3 > *"
+    def grailsVersion = "2.3 > *"
     // the other plugins this plugin depends on
     def dependsOn = [:]
     // resources that are excluded from plugin packaging
@@ -11,14 +11,14 @@ class ModernizrGrailsPlugin {
     ]
 
     def title = "Modernizr for Grails" // Headline display name of the plugin
-    def author = "Konstantinos Kostarellis"
-    def authorEmail = "kosta.grails@gmail.com"
+    def author = "Simon Kenyon"
+    def authorEmail = "simon@koala.ie"
     def description = '''\
 Plugin that provides the JavaScript library Modernizr. Modernizr helps you build the next generation of HTML5 and CSS3-powered websites.
-It integrates nicely with the resources plugin.
+It integrates nicely with the resources plugin. Based on an older version by Konstantinos Kostarellis.
 '''
 
-    // URL to the plugin's documentation
+    // URL to the plugin's documentation - for previous version
     def documentation = "http://grails.org/plugin/modernizr"
 
     // Extra (optional) plugin metadata
@@ -27,16 +27,16 @@ It integrates nicely with the resources plugin.
     def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
-//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
+    def organization = [ name: "The Koala Computer Company Limited", url: "http://koala.ie/" ]
 
     // Any additional developers beyond the author specified above.
-//    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
+    def developers = [ [ name: "Simon Kenyon", email: "simon@koala.ie" ]]
 
     // Location of the plugin's issue tracker.
-    def issueManagement = [ system: "GITHUB", url: "https://github.com/delight/grails-modernizr/issues" ]
+    def issueManagement = [ system: "GITHUB", url: "https://github.com/simonckenyon/grails-modernizr/issues" ]
 
     // Online location of the plugin's browseable source code.
-    def scm = [ url: "https://github.com/delight/grails-modernizr" ]
+    def scm = [ url: "https://github.com/simonckenyon/grails-modernizr" ]
 
     def doWithWebDescriptor = { xml ->
         // TODO Implement additions to web.xml (optional), this event occurs before
